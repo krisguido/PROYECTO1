@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Para hacer responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre Apellido</title>
-
-    <!-- CSS -->
+    <title>Kristina Guido</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <a href="#inicio">Tu nombre</a>     
+        <nav>
+            <a href="#inicio" class="strong"><strong>KRISTINA GUIDO</strong></a>
+            <a href="#inicio" class="menuItem">Inicio</a>
+            <a href="#contacto" class="menuItem">Contacto</a>
+        </nav>
     </header>
 
-    <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
-    <!-- En este archivo escriban su HTML -->
+    <main>
+    <section class="inicio" id="inicio">
+        <div class="imgcajaPrincipal">
+            <img src="img/Foto2.png" alt="Foto de Kristina" class="imgPrincipal">
+        </div>
+        <h1>Hola! Soy Kristina</h1>
+        <p>Mi experiencia profesional se enmarca en la fidelización de clientes, desde el trato directo para resolver sus necesidades hasta ejecutar estrategias empresariales que los mantengan satisfechos. Empecé en pequeñas empresas, en las que di forma a campañas de email marketing y redes sociales que expandieron la base de clientes. Luego estuve en la industria de los seguros generales, con equipos de atención directa a los asegurados y, recientemente, fundé una pequeña empresa que vende mobiliario de hogar a través de marketplaces.</p>
+        <div class="cajaBoton">
+            <button>Descarga mi CV</button>
+        </div>
+    </section>
 
+    <section class="contacto" id="contacto">
+        <div class="recuadro">
+            <h2>Hablemos!</h2>
+            <p>Siempre he sido una persona interesada por las necesidades de otros, por eso trato de ayudar a quien puedo y me gustaria escuchar de ti. Tengo varios canales disponibles de contacto para que, el dia que quieras hablar conmigo, me sientas a solo un click de distancia.</p>
+        </div>
+        <ul>
+            <li><img src="img/mail.png" alt="icono de email" class="icono"></li>
+            <li><img src="img/github.png" alt="icono de github" class="icono" id="iconoCentral"></li>
+            <li><img src="img/linkedin.png" alt="icono de linkedin" class="icono"> </li>
+        </ul>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Creado por Kristina</p>
+        </div>
+    </footer>
 </body>
 </html>
