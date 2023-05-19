@@ -11,6 +11,10 @@ body {
     color: #0f0f0f;
 }
 
+section {
+    padding-top: 90px;
+}
+
 header {
     position: fixed;
     background-color: #fbfbfb;
@@ -29,7 +33,8 @@ nav {
 }
 
 .strong {
-    margin-right: 10vw;
+    margin-right: 8vw;
+    margin-left: 2vw;
     font-size: 22px;
 }
 
@@ -83,7 +88,7 @@ p {
 .recuadro {
     background-color: rgba(175, 89, 158, 0.3);
     border-radius: 5px;
-    margin: 45vw 5vw 12vw 5vw;
+    margin: 20vw 5vw 12vw 5vw;
     padding: 10px;
     align-items: center;
 }
@@ -137,25 +142,65 @@ footer {
 */
 
 main {
-    padding-top: 90px;
     max-width: 1200px;
     margin: auto;
 }
 
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
+/* RESPONSIVE */
+
+@media (min-width: 600px) {
+    nav {
+        height: 150px;
+    }
+
+    .strong {
+        font-size: 35px;
+    }
+
+    nav a {
+        font-size: 30px;
+    }
+
+    section {
+        padding-top: 150px;
+    }
+
+    .imgPrincipal {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 30px;
+        padding: 20px 50px ;
+    }
+
+    .CV {
+        height: 80px;
+        font-size: 30px;
+        border-radius: 35px;
+    }
+
+    .recuadro {
+        margin: 0 10vw 10vw 10vw;
+        border-radius: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .icono {
+        width: 120px;
+        height: 120px;
+    }
+
+    .footer {
+        height: 150px;
+    }
+}
