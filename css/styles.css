@@ -6,23 +6,31 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: white;
+    color: #0f0f0f;
+}
+
+header {
+    position: fixed;
+    background-color: #fbfbfb;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.253);
+    z-index: 100;
 }
 
 nav {
-    width: 100%;
-    height: 80px;
     display: flex;
+    height: 90px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;   
     padding: 15px;
-    border-bottom: 2px gray solid;
 }
 
 .strong {
     margin-right: 10vw;
+    font-size: 22px;
 }
 
 .imgcajaPrincipal {
@@ -33,44 +41,47 @@ nav {
 }
 
 .imgPrincipal {
-    width: 80vw;
+    width: 80%;
     max-width: 90%;
-    height: 300px;
-    max-height: 60%;
     margin-bottom: 2vh;
 }
 
 h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 36px;
 }
 
 p {
     text-align: center;
     font-size: 18px;
     padding: 20px;
+    line-height: 1.2;
 }
 
 .cajaBoton {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 2vh 0 0 0;
 }
 
-button {
-    width: 50%;
+.CV {
+    color: #fbfbfb;
+    background-color: #af599e;
     height: 45px;
-    border: none;
-    background-color: purple;
     border-radius: 25px;
-    color: white;
-    padding: 5px 15px;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
+    padding: 15px 45px;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
     font-weight: 600;
 }
 
 .recuadro {
-    background-color: blueviolet;
+    background-color: rgba(175, 89, 158, 0.3);
     border-radius: 5px;
     margin: 45vw 5vw 12vw 5vw;
     padding: 10px;
@@ -79,7 +90,7 @@ button {
 
 h2 {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 28px;
 }
 
@@ -109,11 +120,12 @@ a {
 
 footer {
     font-size: 24px;
+    color: #fbfbfb;
 }
 
 .footer {
-    background-color: purple;
-    height: 85px;
+    background-color: #af599e;
+    height: 90px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,12 +135,13 @@ footer {
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
-/*
+
 main {
+    padding-top: 90px;
     max-width: 1200px;
     margin: auto;
 }
-*/
+
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
